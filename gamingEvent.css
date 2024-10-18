@@ -221,10 +221,11 @@ body{
     &:nth-child(4) { left: calc(50% + 220px); }
     &:nth-child(5) { left: calc(50% + 440px); }
     &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
+    &:nth-child(7) { left: calc(50% + 660px); opacity: 0; }
 }
   
 .content {
-    width: min(30vw,400px);
+    width: min(30vw,500px);
     position: absolute;
     top: 50%;
     left: 3rem;
@@ -246,7 +247,7 @@ body{
     & .description {
       line-height: 1.7;
       margin: 1rem 0 1.5rem;
-      font-size: 0.8rem;
+      font-size: 2.8rem;
     }
   
     & button {
@@ -313,6 +314,7 @@ body{
       &:nth-child(4) { left: calc(50% + 170px); }
       &:nth-child(5) { left: calc(50% + 340px); }
       &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
+      &:nth-child(7) { left: calc(50% + 510px); opacity: 0; }
     }
 }
   
@@ -330,6 +332,7 @@ body{
       &:nth-child(4) { left: calc(50% + 140px); }
       &:nth-child(5) { left: calc(50% + 280px); }
       &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+      &:nth-child(7) { left: calc(50% + 420px); opacity: 0; }
     }
 }
 
@@ -339,4 +342,16 @@ body{
 
 .slider {
     transition: transform 0.5s ease-in-out; /* Adjust duration as needed */
+}
+
+#sponsor{
+    position: relative;
+    background: url('gamingEvent//Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.display_1{
+    font-size: 120px;
 }
