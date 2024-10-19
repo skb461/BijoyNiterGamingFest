@@ -403,7 +403,7 @@ body{
     }
 
     .content{
-        top: 25%;
+        top: 20%;
         left: 1rem;
         width: min(40vh, 500px);
     }
