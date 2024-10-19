@@ -352,6 +352,7 @@ body{
     .item {
       width: 130px;
       height: 220px;
+        top: 55%;
   
       &:nth-child(3) { left: 80%; }
       &:nth-child(4) { left: calc(80% + 140px); }
