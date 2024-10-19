@@ -16,6 +16,10 @@
     font-style: normal;
 }
 
+.logo{
+    width:500px;
+}
+
 .btn {
     /* Clean style */
     -moz-appearance: none;
@@ -231,7 +235,7 @@ body{
     left: 3rem;
     transform: translateY(-50%);
     font-style: normal;
-    font: 500 0.85rem Orbitron,sans-serif;
+    /* font: 500 0.85rem Orbitron,sans-serif; */
     color: white;
     text-shadow: 0 3px 8px rgba(0,0,0,0.5);
     opacity: 0;
@@ -242,12 +246,13 @@ body{
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
+        font-size: 4rem;
     }
   
     & .description {
       line-height: 1.7;
       margin: 1rem 0 1.5rem;
-      font-size: 2.8rem;
+      font-size: 2rem;
     }
   
     & button {
@@ -279,12 +284,12 @@ body{
   
 .nav_btn {
     position: absolute;
-    bottom: 2rem;
+    bottom: 0rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
     user-select: none;
-  
+    
     & .btn_nav {
       background-color: rgba(255,255,255,0.5);
       color: rgba(0,0,0,0.7);
@@ -298,6 +303,26 @@ body{
         background-color: rgba(255,255,255,0.3);
       }
     }
+}
+
+.nav_btn>.btn{
+    width: 300px;
+}
+
+.slider {
+    transition: transform 0.5s ease-in-out; /* Adjust duration as needed */
+}
+
+#sponsor{
+    position: relative;
+    background: url('gamingEvent//Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.display_1{
+    font-size: 120px;
 }
   
 @media (width > 650px) and (width < 900px) {
@@ -320,38 +345,71 @@ body{
   
 @media (width < 650px) {
     .content {
-      & .title        { font-size: 0.9rem; }
-      & .description  { font-size: 0.65rem; }
+      & .title        { font-size: 1.9rem; }
+      & .description  { font-size: 1.65rem; }
       & button        { font-size: 0.7rem; }
     }
     .item {
       width: 130px;
       height: 220px;
   
-      &:nth-child(3) { left: 50%; }
-      &:nth-child(4) { left: calc(50% + 140px); }
-      &:nth-child(5) { left: calc(50% + 280px); }
-      &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
-      &:nth-child(7) { left: calc(50% + 420px); opacity: 0; }
+      &:nth-child(3) { left: 80%; }
+      &:nth-child(4) { left: calc(80% + 140px); }
+      &:nth-child(5) { left: calc(80% + 280px); }
+      &:nth-child(6) { left: calc(80% + 420px); opacity: 0; }
+      &:nth-child(7) { left: calc(80% + 420px); opacity: 0; }
     }
 }
 
-.nav_btn>.btn{
-    width: 300px;
+.teaser{
+    width: 80%;
+    height: 600px;
 }
 
-.slider {
-    transition: transform 0.5s ease-in-out; /* Adjust duration as needed */
+.moble_game_logo{
+    display: block;
 }
 
-#sponsor{
-    position: relative;
-    background: url('gamingEvent//Background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.map{
+    width: 400px;
+    height: 200px;
 }
 
-.display_1{
-    font-size: 120px;
+@media screen and (max-width: 480px) {
+    .logo{
+        width:300px;
+    }
+
+    .display_1{
+        font-size: 30px;
+    }
+
+    .teaser{
+        width: 90%;
+        height: 200px;
+    }
+
+    .moble_game_logo{
+        display: none;
+    }
+
+    .map{
+        width: 100%;
+    }
+
+    #game {
+        margin-top: -4%;
+        overflow-x: hidden;
+    }
+
+    .content{
+        top: 30%;
+        left: 1rem;
+        width: min(40vh, 500px);
+    }
+
+    .content>a{
+        width: 200px !important;
+    }
+
 }

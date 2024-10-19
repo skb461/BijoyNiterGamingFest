@@ -19,7 +19,7 @@
     <div class="offcanvas offcanvas-start bg_bark text-light" id="navbar">
         <div class="offcanvas-header">
         <h1 class="offcanvas-title">It's NCC</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="list-group list-group-flush bg-transparent text-light">
@@ -110,12 +110,12 @@
     </nav>
 
     <section id="hero">
-        <div class="container py-5">
+        <div class="container py-lg-5 py-2">
             <div class="row">
-                <div class="col-5 mx-auto">
-                    <img src="gamingEvent/nccgaming.png" alt="Logo" style="width:500px;" class="rounded d-block mx-auto">
+                <div class="col-lg-5 col-12 mx-auto">
+                    <img src="gamingEvent/nccgaming.png" alt="Logo"  class="rounded d-block mx-auto logo">
                 </div>
-                <div class="col-5 mx-auto">
+                <div class="col-lg-5 col-12 mx-auto">
                     <p class="display-3 text-light Orbitron"><span class="text-danger Orbitron display-1 fw-bolder">Bijoy</span><br />NITER Gaming Fest</p>
                     <p class="text-light">Starting From: 19th October, 2024</p>
                     <p class="text-light">Registration Deadline: 25th October, 2024</p>
@@ -136,29 +136,22 @@
         </p>
 
         <script>
-            // Set the date we're counting down to
             var countDownDate = new Date("Oct 25, 2024 23:59:59").getTime();
             
-            // Update the count down every 1 second
             var x = setInterval(function() {
             
-            // Get today's date and time
             var now = new Date().getTime();
                 
-            // Find the distance between now and the count down date
             var distance = countDownDate - now;
                 
-            // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
-            // Output the result in an element with id="demo"
             document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
                 
-            // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("countdown").innerHTML = "EXPIRED";
@@ -173,13 +166,13 @@
         </p>
         <hr class="bg_warning pt-1" style="opacity: 1;" />
         <div class="container pt-5">
-            <iframe width="80%" height="600" src="https://www.youtube.com/embed/y00JtGJ3XF8?si=8p6QZUBgUxmkvJkw" title="Bijoy NITER Gaming Fest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/y00JtGJ3XF8?si=8p6QZUBgUxmkvJkw" title="Bijoy NITER Gaming Fest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="teaser"></iframe>
         </div>
     </section>
 
     <section id="teasabouter" class="bg_bark pb-5">
         <div class="row container mx-auto">
-            <div class="col-5 mx-auto">
+            <div class="col-lg-5 col-12 mx-auto">
                 <p class="fs-3 text-left text-light Orbitron">
                      About - <span class="text-danger  fs-1 fw-bolder">The Fest</span>
                 </p>
@@ -188,7 +181,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sint ullam magni animi officia repellendus autem quod totam suscipit recusandae hic molestias quo quis reiciendis assumenda incidunt? Animi, sed neque!
                 </p>
             </div>
-            <div class="col-5 mx-auto">
+            <div class="col-lg-5 col-12 mx-auto">
                 <p class="fs-3 text-left text-light Orbitron">
                      About - <span class="text-danger  fs-1 fw-bolder">The NCC</span>
                 </p>
@@ -349,34 +342,34 @@
     </section>
     
     <footer class="container-fluid bg_bark pb-2">
-        <div class="container py-5">
+        <div class="container py-lg-5 py-2">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-12 py-3">
                     <p class="fs-2 text-center text-light Orbitron">
                         Organized <span class="text-danger  fs-1 fw-bolder">By</span>
                     </p>
                     <img src="gamingEvent/NCC_logo.png" alt="Logo" style="width:200px;" class="rounded d-block mx-auto bg-white">
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12 moble_game_logo py-3">
                     <img src="gamingEvent/nccgaming.png" alt="Logo" style="width:300px;" class="rounded d-block mx-auto">
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12 py-3">
                     <p class="fs-2 text-center text-light Orbitron">
                         Value <span class="text-danger  fs-1 fw-bolder">Location</span>
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.2302099920857!2d90.22937307618358!3d23.91690087855712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e8dae5260da7%3A0x20a78235074c8264!2sNITER%20-%20National%20Institute%20of%20Textile%20Engineering%20and%20Research!5e0!3m2!1sen!2sbd!4v1729275899798!5m2!1sen!2sbd" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.2302099920857!2d90.22937307618358!3d23.91690087855712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e8dae5260da7%3A0x20a78235074c8264!2sNITER%20-%20National%20Institute%20of%20Textile%20Engineering%20and%20Research!5e0!3m2!1sen!2sbd!4v1729275899798!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto map"></iframe>
                 </div>
             </div>
         </div>
         <div class="container-fluid py-5" id="sponsor">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-12 mt-3">
                     <p class="fs-2 text-center text-light Orbitron">
                         Our <span class="text-danger  fs-1 fw-bolder">App</span>
                     </p>
                     <img src="gamingEvent/NCC_logo.png" alt="Logo" style="width:200px;" class="rounded d-block mx-auto bg-white">
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12 mt-3">
                     <p class="fs-2 text-center text-light Orbitron">
                         Our <span class="text-danger  fs-1 fw-bolder">Sponsors</span>
                     </p>
@@ -389,7 +382,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12 mt-3">
                     <p class="fs-2 text-center text-light Orbitron">
                         Media <span class="text-danger  fs-1 fw-bolder">Partner</span>
                     </p>
@@ -416,9 +409,9 @@
         const slider = document.querySelector('.slider');
 
         function activate(e) {
-        const items = document.querySelectorAll('.item');
-        e.target.matches('.next') && slider.append(items[0])
-        e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+            const items = document.querySelectorAll('.item');
+            e.target.matches('.next') && slider.append(items[0])
+            e.target.matches('.prev') && slider.prepend(items[items.length-1]);
         }
 
         document.addEventListener('click',activate,false);
